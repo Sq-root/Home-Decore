@@ -6,7 +6,8 @@ global variables, colors, etc.). They have no direct output.
 */
 
 // Import Abstracts files
-@import "_abstracts.breakpoints.scss";
-@import "_abstracts.mixins.scss";
-@import "_abstracts.variables.scss";
-@import "_abstracts-typography.scss";
+@import "_abstracts.breakpoints";
+@import "_abstracts.mixins";
+@import "_abstracts.variables";
+@import "_abstracts-typography";
+@import "_abstracts-font";

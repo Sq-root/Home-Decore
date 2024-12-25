@@ -1,50 +1,59 @@
-/* ==========================================================================
-   #TYPOGRAPHY
-   ========================================================================== */
+/* Font Family */
+$primary-font-worksans: "Work Sans", sans-serif;
 
-/* Typographic stacks
-   ========================================================================== */
-$font-stack: "Manrope", sans-serif;
-
-/* High-level base settings
-   ========================================================================== */
+/* High-level base settings */
 $global-font-size: 16px;
 $global-line-height: 20px;
 
-/* Typographic scale body copy
-   ========================================================================== */
-$typographic-scale-size-body-1: ceil(($global-font-size * 0.85)); //~14px
-$typographic-scale-size-body-2: ceil(($global-font-size * 0.75));
-; //~12px
-
-/* Typographic scale headings
-   ========================================================================== */
-$typographic-scale-size-heading-xxl-display-lg: ceil(($global-font-size * 3)); //~48px;
-$typographic-scale-size-heading-xl-display-lg: ceil(($global-font-size * 2.35)); //~38px;
-$typographic-scale-size-heading-display-lg: ceil(($global-font-size * 1.85)); //~30px;
-$typographic-scale-size-heading-1-lg: ceil(($global-font-size * 1.65)); //~27px; 
-$typographic-scale-size-heading-2-lg: ceil(($global-font-size * 1.25)); //~20px;
-$typographic-scale-size-heading-3-lg: $global-font-size; //~16px;
-
-$typographic-scale-size-heading-xl-display: ceil(($global-font-size * 1.75)); //~28px;
-$typographic-scale-size-heading-display: ceil(($global-font-size * 1.6)); //~26px;
-$typographic-scale-size-heading-1: ceil(($global-font-size * 1.35)); //~22px;
-$typographic-scale-size-heading-2: ceil(($global-font-size * 1.1)); //~18px;
-$typographic-scale-size-heading-3: ceil(($global-font-size * 0.85)); //~14px;
-
-/* Typographic scale form and input
-   ========================================================================== */
-$typographic-scale-size-input-label: ceil(($global-font-size * 0.75));
-; //~12px
-$typographic-scale-size-input-helper: ceil(($global-font-size * 0.75));
-; //~12px
-$typographic-scale-size-input-default: $global-font-size; //~16px;
-$typographic-scale-size-placeholder: $global-font-size; //~16px;
-
-/* Font weight
-   ========================================================================== */
+/* Font weight */
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-dark: 900;
+
+
+
+
+
+
+
+
+
+
+// /* Typographic scale body copy
+//    ========================================================================== */
+// $typographic-scale-size-body-1: ceil(($global-font-size * 0.85)); //~14px
+// $typographic-scale-size-body-2: ceil(($global-font-size * 0.75)); //~12px
+
+// /* Typographic scale headings
+//    ========================================================================== */
+// $typographic-scale-size-heading-xxl-display-lg: ceil(
+//   ($global-font-size * 3)
+// ); //~48px;
+// $typographic-scale-size-heading-xl-display-lg: ceil(
+//   ($global-font-size * 2.35)
+// ); //~38px;
+// $typographic-scale-size-heading-display-lg: ceil(
+//   ($global-font-size * 1.85)
+// ); //~30px;
+// $typographic-scale-size-heading-1-lg: ceil(($global-font-size * 1.65)); //~27px;
+// $typographic-scale-size-heading-2-lg: ceil(($global-font-size * 1.25)); //~20px;
+// $typographic-scale-size-heading-3-lg: $global-font-size; //~16px;
+
+// $typographic-scale-size-heading-xl-display: ceil(
+//   ($global-font-size * 1.75)
+// ); //~28px;
+// $typographic-scale-size-heading-display: ceil(
+//   ($global-font-size * 1.6)
+// ); //~26px;
+// $typographic-scale-size-heading-1: ceil(($global-font-size * 1.35)); //~22px;
+// $typographic-scale-size-heading-2: ceil(($global-font-size * 1.1)); //~18px;
+// $typographic-scale-size-heading-3: ceil(($global-font-size * 0.85)); //~14px;
+
+// /* Typographic scale form and input
+//    ========================================================================== */
+// $typographic-scale-size-input-label: ceil(($global-font-size * 0.75)); //~12px
+// $typographic-scale-size-input-helper: ceil(($global-font-size * 0.75)); //~12px
+// $typographic-scale-size-input-default: $global-font-size; //~16px;
+// $typographic-scale-size-placeholder: $global-font-size; //~16px;
