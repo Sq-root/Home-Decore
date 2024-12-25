@@ -1,0 +1,39 @@
+/* ==========================================================================
+   #BASE
+   ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-font-color;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-stack;
+  font-size: $global-font-size;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: $global-line-height;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ul,
+li {
+  padding: 0px;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    color: black;
+    background: white;
+  }
+}

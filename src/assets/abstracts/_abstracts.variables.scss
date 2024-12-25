@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #VARIABELS
+   ========================================================================== */
+
+/* Global color palette */
+$body-bg: #ffffff; //Background color for `<body>`.
+$body-font-color: #000; //Global text color on `<body>`.
+
+/* Background color */
+$background-primary-color: #f4f4f4; //Primary background color.
+$background-secondary-color: #ebecee; //Primary background color.
+$background-supporting-color: #afafaf; //Primary background color.
+$dark-background: #212121; //Background color for dark mode.
+$white-background: #ffffff; //Background color for white mode.
+
+/* Text colors */
+$color-text-primary: #0d0d0d; /* Main text */
+$color-text-secondary: #afafaf; /* Supporting text */
+$color-text-inverse: #ffffff; /* Text on dark backgrounds */
+$color-text-disabled: #a6a6a6;
+
+/* Border color */
+$border-active: #000;
+$border-inactive: #606060;
+$border-disabled: #a6a6a6;
+
+/* Icon color */
+$icon-black: #313137;
+$icon-disabled: #a6a6a6;
+$icon-white: #ffffff;

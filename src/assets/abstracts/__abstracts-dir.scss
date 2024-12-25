@@ -1,0 +1,12 @@
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers, functions
+and non–output snippets only (font-face imports, reusable mixins,
+global variables, colors, etc.). They have no direct output.
+*/
+
+// Import Abstracts files
+@import "_abstracts.breakpoints.scss";
+@import "_abstracts.mixins.scss";
+@import "_abstracts.variables.scss";
+@import "_abstracts-typography.scss";

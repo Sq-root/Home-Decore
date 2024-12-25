@@ -1,0 +1,62 @@
+$auth-bg-circle-path: url('/images/svg/auth-bg-circle.svg');
+
+.auth {
+    &-wrapper {
+        &__left-content {            
+            &::before {
+                content: '';
+                background-image: $auth-bg-circle-path;
+                width: 386.8px;
+                height: 284px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -48%;
+                left: 20%;
+                filter: blur(2rem);
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                background-color: $light-opactiy-background ;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: -1;
+                left: 0px;
+                top: 0px;
+            }
+
+            @include media-breakpoint-down(md) {
+                &::before {
+                    display: none;
+                }
+            }
+
+            &__title {
+                font-family: "Satoshi-Black";                
+            }
+
+            &__nav-list {
+                &__item {
+                    &::before {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        background: $light-grey-background;
+                        border-radius: 50%;
+                        display: block;
+                        position: absolute;
+                        right: -1.2rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    &:last-child::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

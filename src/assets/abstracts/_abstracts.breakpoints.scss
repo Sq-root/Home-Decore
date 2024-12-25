@@ -1,0 +1,66 @@
+/* ==========================================================================
+   #MEDIA QUERIES
+   ========================================================================== */
+
+/*  Default - Mobile first method
+   ========================================================================== */
+$phones: "(min-width: 576px)";
+/* Small screen / phones, 576px and up */
+$tablets: "(min-width: 768px)";
+/* Medium screen / tablets, 768px and up */
+$desktops: "(min-width: 1025px)";
+/* Large screen / desktops, 1024px and up */
+$wide-screens: "(min-width: 1200px)";
+/* Extra large screen / wide desktops, 1200px and up */
+
+/*  Custom
+   ========================================================================== */
+$mobile-only: "(max-width: 767.98px)";
+$tablet-only: "(min-width: 768px) and (max-width: 1024.98px)";
+$mobile-tablet: "(max-width: 1024.98px)";
+$small-phones: "(max-width: 575.98px)";
+// $small-phones-400: "(max-width: 400.98px)";
+// $small-phones-370: "(max-width: 374.98px)";
+// $small-phones-320: "(max-width: 320.98px)";
+
+$breakpoints: (
+   xs: 0,
+   sm: 576px,
+   md: 768px,
+   lg: 992px,
+   xl: 1200px
+);
+
+// Media Query Mixin: Applies styles for screens with a maximum width equal to or smaller than the specified breakpoint.
+// Usage: @include media-breakpoint-down(sm) { /* styles */ }
+// Example: The styles inside this mixin will be applied on screens smaller than or equal to the `sm` breakpoint.
+@mixin media-breakpoint-down($name) {
+   $max-width: map-get($breakpoints, $name) - 0.02; // Adjust for rounding issues
+
+   @media (max-width: $max-width) {
+      @content;
+   }
+}
+
+// Media Query Mixin: Applies styles for screens with a minimum width equal to or larger than the specified breakpoint.
+// Usage: @include media-breakpoint-up(md) { /* styles */ }
+// Example: The styles inside this mixin will be applied on screens larger than or equal to the `md` breakpoint.
+@mixin media-breakpoint-up($name) {
+   $min-width: map-get($breakpoints, $name);
+
+   @media (min-width: $min-width) {
+      @content;
+   }
+}
+
+// Media Query Mixin: Applies styles for screens within the specified range of breakpoints.
+// Usage: @include media-breakpoint-between(md, lg) { /* styles */ }
+// Example: The styles inside this mixin will be applied on screens larger than or equal to the `md` breakpoint and smaller than the `lg` breakpoint.
+@mixin media-breakpoint-between($from, $to) {
+   $min-width: map-get($breakpoints, $from);
+   $max-width: map-get($breakpoints, $to) - 0.02; // Adjust for rounding issues
+
+   @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+   }
+}

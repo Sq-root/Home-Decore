@@ -1,0 +1,15 @@
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in
+the project.
+*/
+
+//Import Base files
+@import "_base.fontface.scss";
+@import "global.scss";
+@import "_base.global.scss";
+@import "_base.page-setting.scss";
+@import "_base.utilities.scss";
+@import "_base.form-elements.scss";
+@import "_base.custom-form-elements.scss";
+@import "_base.buttons.scss";
