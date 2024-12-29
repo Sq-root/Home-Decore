@@ -1,19 +1,19 @@
-.login {
-    &-page__2 {
-        &-title {
-            width: fit-content;
-            margin: 0 auto 37px auto;
+// .login {
+//     &-page__2 {
+//         &-title {
+//             width: fit-content;
+//             margin: 0 auto 37px auto;
 
-            &::before {
-                content: '';
-                background: $pencil-icon;
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                right: -22px;
-                @include flex-center();
+//             &::before {
+//                 content: '';
+//                 background: $pencil-icon;
+//                 position: absolute;
+//                 width: 20px;
+//                 height: 20px;
+//                 right: -22px;
+//                 @include flex-center();
 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }

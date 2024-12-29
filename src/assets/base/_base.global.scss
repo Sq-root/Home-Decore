@@ -1,6 +1,4 @@
-/* ==========================================================================
-   #BASE
-   ========================================================================== */
+/* ========================================================================== #BASE ========================================================================== */
 
 * {
   margin: 0;
@@ -66,10 +64,9 @@ h1 {
 /* Thumb */
 ::-webkit-scrollbar-thumb {
   background: $color-text-secondary;
-  // border-radius: 5px;
+  background: $color-text-secondary;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-track {
-  background-color: $color-white;
+  background-color: $body-bg;
 }
