@@ -13,9 +13,10 @@ import { CoreModule } from '../core/core.module';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     rootRoutingModule,
     CoreModule
   ],
-  bootstrap: [MainComponent] // <--- Add this line
+  bootstrap: [MainComponent]
 })
 export class RootModule { }
