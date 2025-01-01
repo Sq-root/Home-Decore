@@ -23,8 +23,8 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a list role*/
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -70,4 +70,12 @@ h1,
 
 ::-webkit-scrollbar-track {
   background-color: $body-bg;
+}
+
+.icon-bg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $icon-white;
+  padding: 0.57rem;
 }

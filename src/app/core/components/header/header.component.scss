@@ -1,5 +1,33 @@
-// header {
-//   .header_title {
-//     font-size: 1.8rem;
-//   }
-// }
+@import "../../../../assets/styles/abstracts/abstracts.mixins";
+
+.header {
+  &_container {
+    @include flex-layout($justify: space-between, $align: center);
+
+    .header_title {
+      font-size: 1.8rem;
+    }
+
+    .header_menu {
+      flex: 1;
+      &_links {
+        gap: 1rem;
+        @include flex-layout($justify: center, $align: center);
+      }
+    }
+
+    .header_btn_group {
+      @include flex-layout($justify: flex-end, $align: center);
+      gap: 1rem;
+
+      .icon-bg {
+        @include flex-layout($justify: space-between, $align: center);
+      }
+
+      .header_icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
