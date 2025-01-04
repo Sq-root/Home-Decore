@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DynamicBannerComponent implements OnInit {
   @Input() public heading: string = 'Embrace Your Space with Our Home Décor';
   @Input() public sub_heading: string = 'Curate Your Dream Home: Explore Our Home Décor Collection';
+  @Input() public img_name: string = 'bench-accounting-nvzvOPQW0gc-unsplash.jpg';
+  public img_path: string = '../../../../assets/Imgs/';
 
   constructor() { }
 
