@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background-color: $background-primary-color;
+  background-color: $body-bg;
   color: $body-font-color;
   font-family: $primary-font-worksans;
   font-size: $global-font-size;
@@ -31,10 +31,14 @@ ol {
 li a {
   text-decoration: none;
   color: $color-text-links;
-  &:hover,
-  .active {
+  font-size: 0.88rem;
+  &:hover {
     color: $color-text-primary;
   }
+}
+
+li a.active {
+  color: $color-text-primary;
 }
 
 p {
@@ -78,4 +82,8 @@ h1,
   border-radius: 50%;
   background-color: $icon-white;
   padding: 0.57rem;
+}
+
+.box-radius {
+  border-radius: 18px;
 }

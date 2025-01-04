@@ -14,8 +14,8 @@ import { CoreModule } from '../core/core.module';
   imports: [
     BrowserModule,
     CommonModule,
-    rootRoutingModule,
-    CoreModule
+    CoreModule,
+    rootRoutingModule
   ],
   bootstrap: [MainComponent]
 })

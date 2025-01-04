@@ -1,8 +1,11 @@
-@import "../../../../assets/styles/abstracts/abstracts.mixins";
+@import "../../../../assets/styles/main.scss";
 
 .header {
   &_container {
     @include flex-layout($justify: space-between, $align: center);
+    background-color: $background-primary-color;
+    padding: 8px 20px;
+    margin-block: 1rem;
 
     .header_title {
       font-size: 1.8rem;
@@ -11,7 +14,7 @@
     .header_menu {
       flex: 1;
       &_links {
-        gap: 1rem;
+        gap: 2.3rem;
         @include flex-layout($justify: center, $align: center);
       }
     }
@@ -25,8 +28,8 @@
       }
 
       .header_icon {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
       }
     }
   }

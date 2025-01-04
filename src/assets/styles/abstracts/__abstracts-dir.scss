@@ -6,7 +6,7 @@ global variables, colors, etc.). They have no direct output.
 */
 
 // Import Abstracts files
-@import "_abstracts.breakpoints";
+@import "./abstracts.breakpoints";
 @import "_abstracts.mixins";
 @import "_abstracts.variables";
 @import "_abstracts-typography";
