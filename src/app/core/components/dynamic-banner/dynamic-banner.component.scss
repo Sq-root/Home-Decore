@@ -1,13 +1,35 @@
 @import "../../../../assets/styles/main.scss";
 
-
 .banner_section {
+  @include flex-layout(
+    $direction: column,
+    $justify: center,
+    $align: flex-start
+  );
+  background-color: $background-primary-color;
+  background-image: url("../../../../assets/Imgs/bench-accounting-nvzvOPQW0gc-unsplash.jpg");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  height: 100%; /* Adapts to parent container */
+  min-height: 400px; /* Ensures visible height */
+
   &_wrapper {
+    padding: 20px;
     @include flex-layout(
       $direction: column,
       $justify: center,
       $align: flex-start
     );
-    background-color: $background-primary-color;
+    gap: 2rem;
+
+    .banner_content {
+      width: 55%;
+
+      .banner_heading{
+        margin-bottom: 0.7rem;
+      }
+    }
   }
 }
