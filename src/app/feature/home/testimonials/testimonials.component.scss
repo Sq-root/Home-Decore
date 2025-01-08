@@ -1,10 +1,35 @@
 @import "../../../../assets/styles/main.scss";
 
-.testimonial_section{
+.testimonial_section {
   background-color: $background-primary-color;
-  text-align: center;
+  &_wrapper {
+    .testimonial_txt {
+      font-size: 0.95rem;
+      color: $color-text-supporting;
+      font-weight: $font-weight-bold;
+      text-align: center;
+      padding-top: 1rem;
+    }
+    .logos-container {
+      @include flex-layout($justify: space-around, $align: center);
+      gap: 2rem;
+      margin-top: 1.45rem;
 
-  &_wrapper{
+      .logo-name {
+        @include flex-layout(
+          $direction: "column",
+          $justify: center,
+          $align: center
+        );
+        font-size: 1.35rem;
+        color: $color-text-primary;
+        font-weight: $font-weight-bold;
+        gap: 0.3rem;
 
+        img{
+          width: 40px;
+        }
+      }
+    }
   }
 }
