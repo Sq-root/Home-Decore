@@ -1,0 +1,30 @@
+@import "../../../../assets/styles/main.scss";
+
+.product-card_wrapper {
+  @include flex-layout($justify: flex-start, $align: flex-end);
+  @include background-cover("../../../../assets/Imgs/plant_home.jpeg");
+  padding: 1.35rem 1rem;
+  height: 400px;
+
+  .product-card {
+    @include flex-layout(
+      $direction: row,
+      $justify: space-between,
+      $align: center
+    );
+    min-width: 100%;
+
+    &_title {
+      background-color: #f4f4f4;
+      color: #0d0d0d;
+      font-size: 0.75rem;
+      border-radius: 20px;
+      padding: 7px 12px;
+    }
+
+    &_btn_grp {
+      @include flex-layout($justify: center, $align: center);
+      gap: 0.6rem;
+    }
+  }
+}
