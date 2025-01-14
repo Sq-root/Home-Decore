@@ -1,55 +1,75 @@
-<main class="ng-container">
-  <div class="row my-2">
-    <div class="col-12">
-      <app-custom-carousel></app-custom-carousel>
-    </div>
-    <div class="col-12">
-      <app-testimonials></app-testimonials>
-    </div>
+<!-- HERO SECTION -->
+<div class="row my-2">
+  <div class="col-12">
+    <app-custom-carousel></app-custom-carousel>
   </div>
+  <div class="col-12">
+    <app-testimonials></app-testimonials>
+  </div>
+</div>
 
-  <div class="row my-3 d-flex justify-content-between align-items-center">
-    <div class="col-8">
-      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.visionSection.title"
-        [sub_heading]="content.visionSection.subtitle" [img_name]="content.visionSection.imgName"></app-dynamic-banner>
-    </div>
-    <div class="col-4">
-      <app-product-card [card_title]="content.visionSection.item1" [card_bg_img]=""></app-product-card>
-    </div>
+<!-- VISION SECTION -->
+<div class="row my-3 d-flex justify-content-between align-items-center">
+  <div class="col-8">
+    <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.visionSection.title"
+      [sub_heading]="content.visionSection.subtitle" [img_name]="content.visionSection.imgName"></app-dynamic-banner>
   </div>
+  <div class="col-4">
+    <app-product-card [card_title]="content.visionSection.item1" [card_bg_img]=""></app-product-card>
+  </div>
+</div>
 
-  <div class="row  d-flex justify-content-between align-items-center">
-    <div class="col-4">
-      <app-product-card [card_title]="content.whyChooseUsSection.item1"></app-product-card>
-    </div>
-    <div class="col-8">
-      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.whyChooseUsSection.title"
-        [sub_heading]="content.whyChooseUsSection.subtitle"
-        [img_name]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
-    </div>
+<!-- WHY CHOOSE US SECTION -->
+<div class="row  d-flex justify-content-between align-items-center">
+  <div class="col-4">
+    <app-product-card [card_title]="content.whyChooseUsSection.item1"></app-product-card>
   </div>
+  <div class="col-8">
+    <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.whyChooseUsSection.title"
+      [sub_heading]="content.whyChooseUsSection.subtitle"
+      [img_name]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
+  </div>
+</div>
 
-  <div class="row">
-    <div class="col-12">
-      <app-custom-carousel></app-custom-carousel>
-    </div>
+<div class="row">
+  <div class="col-12">
+    <app-custom-carousel></app-custom-carousel>
   </div>
+</div>
 
-  <div class="row">
-    <div class="col-4">
-      <app-product-card [card_title]="content.uniqueDecorSection.item1"></app-product-card>
-    </div>
-    <div class="col-4">
-      <app-product-card [card_title]="content.uniqueDecorSection.item2"></app-product-card>
-    </div>
-    <div class="col-4">
-      <app-product-card [card_title]="content.uniqueDecorSection.item3"></app-product-card>
-    </div>
+<!-- UNIQUE DECOR SECTION -->
+<div class="row">
+  <div class="col-4">
+    <app-product-card [card_title]="content.uniqueDecorSection.item1"></app-product-card>
   </div>
+  <div class="col-4">
+    <app-product-card [card_title]="content.uniqueDecorSection.item2"></app-product-card>
+  </div>
+  <div class="col-4">
+    <app-product-card [card_title]="content.uniqueDecorSection.item3"></app-product-card>
+  </div>
+</div>
 
-  <div class="row my-4">
-    <div class="col-12">
-      <app-news-letter></app-news-letter>
+<!-- NEWSLETTER SECTION -->
+<div class="row my-4">
+  <div class="col-12">
+    <app-news-letter></app-news-letter>
+  </div>
+</div>
+
+<!-- GALLERY SECTION -->
+<div class="row">
+  <div class="col-6 h-100">
+    <app-dynamic-banner [headingFontSize]="'2.3rem'" [heading]="content.whyChooseUsSection.title"
+      [sub_heading]="content.whyChooseUsSection.subtitle"
+      [img_name]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
+  </div>
+  <div class="col-6">
+    <div class="row row-cols-2 h-100 g-4">
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
     </div>
   </div>
-</main>
+</div>

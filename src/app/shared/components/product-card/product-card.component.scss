@@ -4,7 +4,7 @@
   @include flex-layout($justify: flex-start, $align: flex-end);
   @include background-cover("../../../../assets/Imgs/plant_home.jpeg");
   padding: 1.35rem 1rem;
-  height: 400px;
+  // height: auto;
 
   .product-card {
     @include flex-layout(

@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductCardComponent implements OnInit {
   @Input() public card_title: string
   @Input() public card_bg_img: string = 'Green Fern Plant';
-  @Input() public istitleVisible: boolean = true;
 
   constructor() { }
 
