@@ -3,12 +3,14 @@ export const homeDecorContent = {
     title: 'Embrace Your Space with Our Home Décor',
     subtitle: 'Curate Your Dream Home: Explore Our Home Décor Collection',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+    card_imgName: ''
   },
   visionSection: {
     title: 'Our Vision: Crafting Home Stories',
     subtitle: 'In our world of décor, we believe every home has a unique story waiting to be told.',
     item1: 'Green Fern Plant',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+    card_imgName: ''
   },
   whyChooseUsSection: {
     title: 'Why Choose Us: Elevating Home Décor Experiences',
@@ -16,6 +18,7 @@ export const homeDecorContent = {
       'Experience the difference – where your satisfaction is not just our goal but our guarantee.',
     item1: 'Green English Ivy Vine',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+    card_imgName: ''
   },
   uniqueDecorSection: {
     title: 'Discover Unique Home Décor',
@@ -24,5 +27,6 @@ export const homeDecorContent = {
     item2: 'Brown Potted Green',
     item3: 'Green English Ivy Vine',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+    card_imgName: ''
   },
 };

@@ -5,11 +5,13 @@ import { HomeRoutingModule } from './home-routing.module';
 import { CoreModule } from 'src/app/core/core.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { NewsLetterComponent } from './news-letter/news-letter.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    NewsLetterComponent
   ],
   imports: [
     CommonModule,

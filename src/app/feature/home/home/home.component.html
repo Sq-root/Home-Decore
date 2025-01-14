@@ -14,7 +14,7 @@
         [sub_heading]="content.visionSection.subtitle" [img_name]="content.visionSection.imgName"></app-dynamic-banner>
     </div>
     <div class="col-4">
-      <app-product-card [card_title]="content.visionSection.item1"></app-product-card>
+      <app-product-card [card_title]="content.visionSection.item1" [card_bg_img]=""></app-product-card>
     </div>
   </div>
 
@@ -26,6 +26,30 @@
       <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.whyChooseUsSection.title"
         [sub_heading]="content.whyChooseUsSection.subtitle"
         [img_name]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <app-custom-carousel></app-custom-carousel>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <app-product-card [card_title]="content.uniqueDecorSection.item1"></app-product-card>
+    </div>
+    <div class="col-4">
+      <app-product-card [card_title]="content.uniqueDecorSection.item2"></app-product-card>
+    </div>
+    <div class="col-4">
+      <app-product-card [card_title]="content.uniqueDecorSection.item3"></app-product-card>
+    </div>
+  </div>
+
+  <div class="row my-4">
+    <div class="col-12">
+      <app-news-letter></app-news-letter>
     </div>
   </div>
 </main>
