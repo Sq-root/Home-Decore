@@ -6,9 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./dynamic-banner.component.scss']
 })
 export class DynamicBannerComponent implements OnInit {
-  @Input() public heading: string = 'Embrace Your Space with Our Home Décor';
-  @Input() public sub_heading: string = 'Curate Your Dream Home: Explore Our Home Décor Collection';
-  @Input() public img_name: string = 'bench-accounting-nvzvOPQW0gc-unsplash.jpg';
+  @Input() public heading: string;
+  @Input() public sub_heading: string;
+  @Input() public img_name: string;
+  @Input() public headingFontSize: string = '3rem'; // Default font size
   public img_path: string = '../../../../assets/Imgs/';
 
   constructor() { }
@@ -16,4 +17,8 @@ export class DynamicBannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  public getbackgroundImage() {
+    return this.img_path + this.img_name;
+  }
 }

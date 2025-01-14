@@ -1,4 +1,4 @@
-<div id="carouselExampleIndicators" class="carousel slide" >
+<div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
       aria-current="true" aria-label="Slide 1"></button>
@@ -9,13 +9,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <app-dynamic-banner></app-dynamic-banner>
+      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.homeDecorContent.title"
+        [sub_heading]="content.homeDecorContent.subtitle"
+        [img_name]="content.homeDecorContent.imgName"></app-dynamic-banner>
     </div>
     <div class="carousel-item">
-      <app-dynamic-banner></app-dynamic-banner>
+      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.homeDecorContent.title"
+        [sub_heading]="content.homeDecorContent.subtitle"
+        [img_name]="content.homeDecorContent.imgName"></app-dynamic-banner>
     </div>
     <div class="carousel-item">
-      <app-dynamic-banner></app-dynamic-banner>
+      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.homeDecorContent.title"
+        [sub_heading]="content.homeDecorContent.subtitle"
+        [img_name]="content.homeDecorContent.imgName"></app-dynamic-banner>
     </div>
   </div>
 </div>

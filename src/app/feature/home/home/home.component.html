@@ -10,19 +10,22 @@
 
   <div class="row my-3 d-flex justify-content-between align-items-center">
     <div class="col-8">
-      <app-dynamic-banner></app-dynamic-banner>
+      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.visionSection.title"
+        [sub_heading]="content.visionSection.subtitle" [img_name]="content.visionSection.imgName"></app-dynamic-banner>
     </div>
     <div class="col-4">
-      <app-product-card card_title="Green Fern Plant"></app-product-card>
+      <app-product-card [card_title]="content.visionSection.item1"></app-product-card>
     </div>
   </div>
 
   <div class="row  d-flex justify-content-between align-items-center">
     <div class="col-4">
-      <app-product-card card_title="Green Fern Plant"></app-product-card>
+      <app-product-card [card_title]="content.whyChooseUsSection.item1"></app-product-card>
     </div>
     <div class="col-8">
-      <app-dynamic-banner></app-dynamic-banner>
+      <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.whyChooseUsSection.title"
+        [sub_heading]="content.whyChooseUsSection.subtitle"
+        [img_name]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
     </div>
   </div>
 </main>
