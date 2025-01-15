@@ -2,23 +2,72 @@
 
 .footer {
   background-color: $background-primary-color;
-  padding: 2.5rem;
+  padding: 3rem;
 
   &-container {
     @include flex-layout(
-      $direction: "column",
-      $justify: center,
-      $align: space-between
+      $direction: row,
+      $justify: space-between,
+      $align: stretch
     );
-    padding: 10px 20px;
     border-radius: 18px;
+    gap: 5rem;
+    height: 100%;
 
-    .quick-action{
+    .quick-action {
+      flex: 1;
       @include flex-layout(
-        $direction: "column",
+        $direction: column,
         $justify: center,
         $align: center
       );
+
+      h4 {
+        font-size: 1.3rem;
+        font-weight: $font-weight-medium;
+        margin-bottom: 0.7rem;
+      }
+
+      &-list {
+        li {
+          margin-bottom: 0.4rem;
+        }
+        li a {
+          color: $color-text-primary;
+          text-align: center;
+          font-weight: $font-weight-light;
+
+          &:hover {
+            color: $color-text-secondary;
+          }
+        }
+      }
+    }
+
+    .decor-section {
+      flex: 3;
+      text-align: center;
+      padding: 0px 80px;
+      border-right: 2px solid $color-text-secondary;
+      border-left: 2px solid $color-text-secondary;
+
+      &-wrapper {
+        @include flex-layout(
+          $direction: column,
+          $justify: space-between,
+          $align: center
+        );
+        height: 100%;
+
+        h3 {
+          font-size: 2.7rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .contact-us-section {
+      flex: 1;
     }
   }
 }
