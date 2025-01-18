@@ -1,26 +1,26 @@
 <!-- HERO SECTION -->
-<div class="row my-2">
+<div class="row my-4">
   <div class="col-12">
     <app-custom-carousel></app-custom-carousel>
   </div>
-  <div class="col-12">
+  <div class="col-12 my-4">
     <app-testimonials></app-testimonials>
   </div>
 </div>
 
 <!-- VISION SECTION -->
-<div class="row my-3 d-flex justify-content-between align-items-center">
-  <div class="col-8">
+<div class="row my-4 d-flex justify-content-between align-items-stretch">
+  <div class="col-8 h-100">
     <app-dynamic-banner [headingFontSize]="'2.5rem'" [heading]="content.visionSection.title"
       [sub_heading]="content.visionSection.subtitle" [img_name]="content.visionSection.imgName"></app-dynamic-banner>
   </div>
-  <div class="col-4">
+  <div class="col-4 h-100">
     <app-product-card [card_title]="content.visionSection.item1" [card_bg_img]=""></app-product-card>
   </div>
 </div>
 
 <!-- WHY CHOOSE US SECTION -->
-<div class="row  d-flex justify-content-between align-items-center">
+<div class="row d-flex justify-content-between align-items-center my-4">
   <div class="col-4">
     <app-product-card [card_title]="content.whyChooseUsSection.item1"></app-product-card>
   </div>
@@ -31,14 +31,14 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row my-4">
   <div class="col-12">
     <app-custom-carousel></app-custom-carousel>
   </div>
 </div>
 
 <!-- UNIQUE DECOR SECTION -->
-<div class="row">
+<div class="row my-4">
   <div class="col-4">
     <app-product-card [card_title]="content.uniqueDecorSection.item1"></app-product-card>
   </div>
@@ -58,7 +58,7 @@
 </div>
 
 <!-- GALLERY SECTION -->
-<div class="row">
+<div class="row my-4">
   <div class="col-6 h-100">
     <app-dynamic-banner [headingFontSize]="'2.3rem'" [heading]="content.whyChooseUsSection.title"
       [sub_heading]="content.whyChooseUsSection.subtitle"
