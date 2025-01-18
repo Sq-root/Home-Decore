@@ -7,10 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DynamicBannerComponent implements OnInit {
   @Input() public heading: string;
-  @Input() public sub_heading: string;
-  @Input() public img_name: string;
+  @Input() public subHeading: string;
+  @Input() public imgName: string;
   @Input() public headingFontSize: string = '3rem'; // Default font size
-  public img_path: string = '../../../../assets/Imgs/';
+  public imgPath: string = '../../../../assets/Imgs/';
 
   constructor() { }
 
@@ -19,6 +19,6 @@ export class DynamicBannerComponent implements OnInit {
 
 
   public getbackgroundImage() {
-    return this.img_path + this.img_name;
+    return this.imgPath + this.imgName;
   }
 }
