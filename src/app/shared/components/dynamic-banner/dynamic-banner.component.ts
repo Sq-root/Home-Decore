@@ -9,7 +9,7 @@ export class DynamicBannerComponent implements OnInit {
   @Input() public heading: string;
   @Input() public subHeading: string;
   @Input() public imgName: string;
-  @Input() public headingFontSize: string = '3rem'; // Default font size
+  @Input() public styleType: 'lg' | 'md' = 'lg';
   public imgPath: string = '../../../../assets/Imgs/';
 
   constructor() { }
