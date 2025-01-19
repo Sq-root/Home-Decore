@@ -2,6 +2,7 @@
 
 .header {
   &_container {
+    position: relative;
     @include flex-layout($justify: space-between, $align: center);
     background-color: $background-primary-color;
     padding: 10px 20px;
@@ -12,6 +13,7 @@
       font-size: 1.8rem;
     }
 
+    //For Desktop
     .header_menu {
       flex: 1;
       &_links {
@@ -32,6 +34,52 @@
         width: 20px;
         height: 20px;
         margin: 0 auto;
+      }
+    }
+
+    //For Mobile
+    .header_mobile_menu {
+      display: block;
+      position: absolute;
+      margin-top: 1rem;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 18px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      z-index: 1;
+      top: 58px;
+      left: -100%;
+      transition: all 0.5s ease-in-out;
+
+      .header_menu_links {
+        @include flex-layout(
+          $direction: column,
+          $justify: center,
+          $align: center
+        );
+        gap: 1.4rem;
+        padding: 15px;
+
+        .header_menu_links_item a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .show-menu {
+      left: 0;
+    }
+
+    .hide_mobile {
+      @include media-breakpoint-down("lg") {
+        display: none;
+      }
+    }
+
+    .hide_desktop {
+      @include media-breakpoint-up("lg") {
+        display: none !important;
       }
     }
   }

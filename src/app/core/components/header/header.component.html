@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header_container ng-container">
     <h1 class="header_title">Décor</h1>
-    <nav class="header_menu">
+    <nav class="hide_mobile header_menu">
       <ul class="header_menu_links">
         <li class="header_menu_links_item"><a class="active" href="#">Home</a></li>
         <li class="header_menu_links_item"><a href="#">About Us</a></li>
@@ -16,6 +16,18 @@
       <div class="icon-bg">
         <img class="header_icon" src="../../../../assets/Imgs/icons/bag.svg" alt="Shopping bag icon">
       </div>
+      <div class="icon-bg hide_desktop" id="menubtn" (click)="toggleMenu()">
+        <img class="header_icon" src="../../../../assets/Imgs/icons/menu-svgrepo-com.svg" alt="Shopping bag icon">
+      </div>
+    </div>
+
+    <div class="header_mobile_menu hide_desktop" [ngClass]="{'show-menu': showMenu}" id="navlinks">
+      <ul class="header_menu_links">
+        <li class="header_menu_links_item"><a class="active" href="#">Home</a></li>
+        <li class="header_menu_links_item"><a href="#">About Us</a></li>
+        <li class="header_menu_links_item"><a href="#">New Collection</a></li>
+        <li class="header_menu_links_item"><a href="#">Discount Collection</a></li>
+      </ul>
     </div>
   </div>
 </header>

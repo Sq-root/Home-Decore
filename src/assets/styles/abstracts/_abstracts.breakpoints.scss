@@ -36,7 +36,7 @@ $breakpoints: (
 // Usage: @include media-breakpoint-down(sm) { /* styles */ }
 // Example: The styles inside this mixin will be applied on screens smaller than or equal to the `sm` breakpoint.
 @mixin media-breakpoint-down($name) {
-   $max-width: map-get($breakpoints, $name) - 0.02; // Adjust for rounding issues
+   $max-width: map-get($breakpoints, $name);
 
    @media (max-width: $max-width) {
       @content;
