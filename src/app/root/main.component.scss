@@ -1,0 +1,8 @@
+@import "../../assets/styles/main.scss";
+
+.layout-container {
+  padding-inline: 12px;
+  @include media-breakpoint-down("lg") {
+    padding-inline: 10px;
+  }
+}
