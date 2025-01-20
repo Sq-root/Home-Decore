@@ -23,12 +23,19 @@
           $align: center
         );
         font-size: 1.35rem;
+        @include media-breakpoint-down("lg") {
+          font-size: 1.1rem;
+        }
         color: $color-text-primary;
         font-weight: $font-weight-bold;
         gap: 0.3rem;
 
         img {
           width: 40px;
+
+          @include media-breakpoint-down("lg") {
+            width: 35px;
+          }
         }
       }
     }

@@ -16,4 +16,9 @@
     content: "→"; /* Adds the arrow */
     margin-left: 0.5rem;
   }
+
+  @include media-breakpoint-down("lg") {
+    padding: 0.65rem 0.7rem;
+    font-size: $typographic-scale-size-heading-3;
+  }
 }

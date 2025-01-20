@@ -1,6 +1,6 @@
 <section class="ng-container banner_section box-radius ng-px h-100"
   [ngStyle]="{ 'background-image': 'url(' + imgPath + imgName + ')' }">
-  <div class="banner_section_wrapper">
+  <div class="banner_section_wrapper" [ngClass]="[styleType === 'lg' ? 'banner-lg' : '' ]">
     <div class="banner_content">
       <h1 class="banner_heading" [ngClass]="[styleType === 'lg' ? 'font-lg' : 'font-md' ]">{{heading}}</h1>
       <p class="banner_subheading">

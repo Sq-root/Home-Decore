@@ -7,7 +7,6 @@
     $align: flex-start
   );
   background-color: $background-primary-color;
-  // background-image: url("../../../../assets/Imgs/bench-accounting-nvzvOPQW0gc-unsplash.jpg");
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
@@ -27,17 +26,34 @@
     .banner_content {
       width: 65%;
 
+      @include media-breakpoint-down("lg") {
+        width: 85%;
+      }
+
       .banner_heading {
         margin-bottom: 0.7rem;
       }
     }
   }
 
+  .banner-lg {
+    @include media-breakpoint-down("lg") {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
   .font-lg {
     font-size: 3rem;
+    @include media-breakpoint-down("lg") {
+      font-size: 2.45rem;
+    }
   }
 
   .font-md {
     font-size: 2.35rem;
+    @include media-breakpoint-down("lg") {
+      font-size: 1.8rem;
+    }
   }
 }
