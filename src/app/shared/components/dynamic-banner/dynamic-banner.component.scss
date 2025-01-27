@@ -14,6 +14,10 @@
   height: 100%; /* Adapts to parent container */
   min-height: 400px; /* Ensures visible height */
 
+  @include media-breakpoint-down("md") {
+    min-height: 350px; /* Ensures visible height */
+  }
+
   &_wrapper {
     padding: 20px;
     @include flex-layout(
