@@ -29,4 +29,10 @@ export const homeDecorContent = {
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
     card_imgName: ''
   },
+  homeStories: {
+    title: 'Discover Unique Home Décor',
+    subtitle: 'Indulge in sophistication with our exclusive home décor collection.',
+    imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+    card_imgName: ''
+  }
 };
