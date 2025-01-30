@@ -9,22 +9,22 @@
 </div>
 
 <!-- VISION SECTION -->
-<div class="row my-4 my-md-0 align-items-stretch px-md-2 align-items-md-center">
-  <div class="col-7 col-md-12 col-lg-8 my-md-2">
+<div class="row mt-4 my-md-0 align-items-stretch px-md-2 align-items-md-center">
+  <div class="col-sm-12 col-md-8 my-md-2">
     <app-dynamic-banner [styleType]="'md'" [heading]="content.visionSection.title"
       [subHeading]="content.visionSection.subtitle" [imgName]="content.visionSection.imgName"></app-dynamic-banner>
   </div>
-  <div class="vision-gallery col-5 align-self-md-center col-lg-4 ">
+  <div class="vision-gallery mt-4 my-md-0 col-md-4 align-self-md-center">
     <app-product-card [carTitle]="content.visionSection.item1" [cardBgImgName]=""></app-product-card>
   </div>
 </div>
 
 <!-- WHY CHOOSE US SECTION -->
-<div class="row align-items-stretch my-4 ">
-  <div class="col-5 col-lg-4">
+<div class="row mt-4 my-md-0 align-items-stretch px-md-2 align-items-md-center">
+  <div class="vision-gallery mt-4 my-md-0 col-md-4 align-self-md-center">
     <app-product-card [carTitle]="content.whyChooseUsSection.item1"></app-product-card>
   </div>
-  <div class="col-7 col-lg-8">
+  <div class="col-sm-12 col-md-8 my-md-2">
     <app-dynamic-banner [styleType]="'md'" [heading]="content.whyChooseUsSection.title"
       [subHeading]="content.whyChooseUsSection.subtitle"
       [imgName]="content.whyChooseUsSection.imgName"></app-dynamic-banner>
@@ -39,14 +39,14 @@
 
 <!-- UNIQUE DECOR SECTION -->
 <div
-  class="row my-4 align-items-stretch decore-section flex-md-column align-items-md-center justify-content-md-between">
-  <div class="col-4 ">
+  class="row decore-section my-4 flex-column align-items-center justify-content-between g-3 flex-md-row align-items-md-stretch">
+  <div class="col-7 vision-gallery col-md-4">
     <app-product-card [carTitle]="content.uniqueDecorSection.item1"></app-product-card>
   </div>
-  <div class="col-4">
+  <div class="col-7 vision-gallery col-md-4">
     <app-product-card [carTitle]="content.uniqueDecorSection.item2"></app-product-card>
   </div>
-  <div class="col-4">
+  <div class="col-7 vision-gallery col-md-4">
     <app-product-card [carTitle]="content.uniqueDecorSection.item3"></app-product-card>
   </div>
 </div>
@@ -59,17 +59,17 @@
 </div>
 
 <!-- GALLERY SECTION -->
-<div class="row my-4">
-  <div class="col-6 h-100">
+<div class="row my-4 gap-3 gap-md-0">
+  <div class="col-12 col-md-6 h-100">
     <app-dynamic-banner [styleType]="'md'" [heading]="content.homeStories.title"
       [subHeading]="content.homeStories.subtitle" [imgName]="content.homeStories.imgName"></app-dynamic-banner>
   </div>
-  <div class="col-6">
-    <div class="row row-cols-2 h-100 g-4">
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
+  <div class="col-12 col-md-6 mx-2 mx-md-0">
+    <div class="row row-cols-sm-2 h-100 g-4">
+      <app-product-card class="vision-gallery "></app-product-card>
+      <app-product-card class="vision-gallery "></app-product-card>
+      <app-product-card class="vision-gallery "></app-product-card>
+      <app-product-card class="vision-gallery "></app-product-card>
     </div>
   </div>
 </div>

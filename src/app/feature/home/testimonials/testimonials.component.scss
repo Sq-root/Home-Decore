@@ -12,8 +12,13 @@
       padding-top: 1rem;
     }
     .logos-container {
-      @include flex-layout($justify: space-around, $align: center);
-      gap: 2rem;
+      @include flex-layout(
+        $justify: space-around,
+        $align: center,
+        $wrap: wrap
+      );
+      align-content: center;
+      gap: 1rem;
       margin-top: 1.45rem;
 
       .logo-name {
