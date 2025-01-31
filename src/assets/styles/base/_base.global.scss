@@ -11,8 +11,6 @@ body {
   height: 100%;
 }
 
-
-
 body {
   background-color: $body-bg;
   color: $body-font-color;
@@ -98,4 +96,10 @@ h1,
 
 .box-radius {
   border-radius: 15px;
+}
+
+.bg-center {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }

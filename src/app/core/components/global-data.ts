@@ -1,9 +1,23 @@
 export const homeDecorContent = {
   homeDecorContent: {
-    title: 'Embrace Your Space with Our Home Décor',
-    subtitle: 'Curate Your Dream Home: Explore Our Home Décor Collection',
-    imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
-    card_imgName: ''
+    content1: {
+      title: 'Embrace Your Space with Our Home Décor',
+      subtitle: 'Curate Your Dream Home: Explore Our Home Décor Collection',
+      imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
+      card_imgName: ''
+    },
+    content2: {
+      title: 'Elevate Your Living Space with Timeless Elegance',
+      subtitle: 'Curate a home that reflects your style. Explore our handpicked décor selections for a perfect blend of comfort and sophistication.',
+      imgName: 'vecteezy.jpg',
+      card_imgName: ''
+    },
+    content3: {
+      title: 'Create Your Perfect Home Atmosphere',
+      subtitle: 'Personalize your living space with stunning décor pieces designed for modern aesthetics. Elevate your home with elegance today.',
+      imgName: 'tree.jpeg',
+      card_imgName: ''
+    }
   },
   visionSection: {
     title: 'Our Vision: Crafting Home Stories',

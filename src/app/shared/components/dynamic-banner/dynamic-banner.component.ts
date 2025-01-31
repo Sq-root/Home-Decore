@@ -9,7 +9,9 @@ export class DynamicBannerComponent implements OnInit {
   @Input() public heading: string;
   @Input() public subHeading: string;
   @Input() public imgName: string;
+  @Input() public backgroundPostion: string = 'right';
   @Input() public styleType: 'lg' | 'md' = 'lg';
+
   public imgPath: string = '../../../../assets/Imgs/';
 
   constructor() { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -13,8 +13,16 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public toggleMenu(): void {
+  public toggleMenu(event): void {
+    event.stopPropagation();
     this.showMenu = !this.showMenu;
+  }
+
+  @HostListener('document:click')
+  private onDocumentClick(event: MouseEvent): void {
+    if (this.showMenu) {
+      this.showMenu = false;
+    }
   }
 
 }
