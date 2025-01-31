@@ -12,13 +12,18 @@
   &-wrapper {
     height: 100%;
     width: 50%;
+    text-align: center;
+    padding: 30px;
 
     @include media-breakpoint-down("md") {
       width: 70%;
     }
 
-    text-align: center;
-    padding: 30px;
+    @include media-breakpoint-down("sm") {
+      width: 100%;
+      padding: 0px;
+    }
+
     @include flex-layout($direction: column, $justify: center, $align: center);
     .newsletter_heading {
       font-size: 2.5rem;
@@ -27,6 +32,10 @@
 
       @include media-breakpoint-down("lg") {
         font-size: 2.2rem;
+      }
+
+      @include media-breakpoint-down("sm") {
+        font-size: 1.6rem;
       }
     }
     .newsletter_subheading {
