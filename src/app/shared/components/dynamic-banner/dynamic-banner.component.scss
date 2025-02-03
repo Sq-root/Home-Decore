@@ -33,6 +33,12 @@
       padding: 0px;
     }
 
+    @include media-breakpoint-down("sm") {
+      align-items: center;
+      text-align: center;
+    }
+
+
     .banner_content {
       width: 65%;
 
