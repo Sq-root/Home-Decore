@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductCardComponent implements OnInit {
   @Input() public carTitle: string = ''
   @Input() public cardBgImgName: string = 'Green Fern Plant';
+  public imgPath: string = '../../../../assets/Imgs/';
 
   constructor() { }
 

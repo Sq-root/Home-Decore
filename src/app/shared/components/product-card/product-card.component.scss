@@ -2,7 +2,9 @@
 
 .product-card_wrapper {
   @include flex-layout($justify: flex-start, $align: flex-end);
-  @include background-cover("../../../../assets/Imgs/plant_home.jpeg");
+  // @include background-cover("../../../../assets/Imgs/plant_home.jpeg");
+  background-size: cover;
+  background-position: center bottom;
   padding: 1.35rem 1rem;
   // height: auto;
 

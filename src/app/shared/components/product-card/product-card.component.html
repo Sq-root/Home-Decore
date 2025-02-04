@@ -1,4 +1,4 @@
-<article class="product-card_wrapper box-radius h-100">
+<article class="product-card_wrapper box-radius h-100" [ngStyle]="{ 'background-image': 'url(' + imgPath + cardBgImgName + ')' }">
   <div class="product-card">
     <h2 class="product-card_title" *ngIf="carTitle.length > 0">{{ carTitle}}</h2>
     <div class="product-card_btn_grp">
