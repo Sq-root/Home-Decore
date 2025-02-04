@@ -41,12 +41,17 @@ export const homeDecorContent = {
     item2: 'Brown Potted Green',
     item3: 'Green English Ivy Vine',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
-    card_imgName: 'wall-green.jpeg'
+    card_imgName1: 'bespoke.jpeg',
+    card_imgName2: 'plant_wall.jpg',
+    card_imgName3: 'wall-green.jpeg'
   },
   homeStories: {
     title: 'Discover Unique Home Décor',
     subtitle: 'Indulge in sophistication with our exclusive home décor collection.',
     imgName: 'bench-accounting-nvzvOPQW0gc-unsplash.jpg',
-    card_imgName: 'wall-green.jpeg'
+    card_imgName1: 'interior.jpg',
+    card_imgName2: 'iphone.jpg',
+    card_imgName3: 'showwall.jpg',
+    card_imgName4: 'wall-green.jpeg'
   }
 };
